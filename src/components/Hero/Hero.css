@@ -1,0 +1,68 @@
+.bgvideo {
+  position: absolute;
+  top: -70px;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+}
+.HeroWrapper {
+  position: relative;
+
+  margin-bottom: 300px;
+}
+.Herodescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Herodescription h1 {
+  margin-top: 12%;
+  font-size: 50px;
+  color: rgb(231, 227, 227);
+  text-align: center;
+}
+.Herodescription span {
+  font-size: 22px;
+  max-width: 35%;
+  text-align: center;
+  line-height: 1.1;
+  padding: 10px;
+  color: white;
+}
+.homebtnwrapper {
+  padding: 10px;
+}
+.homebtnwrapper button {
+  padding: 8px 15px;
+  border: none;
+  font-family: "Encode Sans Expanded", sans-serif;
+  letter-spacing: 0px;
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(223, 185, 116);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 683px) {
+  .Herodescription span {
+    max-width: 75%;
+    text-align: center;
+  }
+  .Herodescription h1 {
+    font-size: 40px;
+  }
+  .bgvideo {
+    height: 70vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bgvideo {
+    height: 82vh;
+    width: 100vw;
+  }
+}

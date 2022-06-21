@@ -1,0 +1,108 @@
+.Aboutwrapper {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  /* background-image: url("https://img.freepik.com/free-vector/celebration-banner-with-gold-balloons-stars_1048-10955.jpg?w=2000"); */
+  background-color: aliceblue;
+}
+
+.aboutcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+  margin-top: 50px;
+}
+.leftAbout {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.aboutheading {
+  font-size: 150px;
+  width: 100px;
+  color: rgb(247, 166, 17);
+  line-height: 0.81;
+  margin-right: 160px;
+  padding: 0;
+}
+.aboutdescription {
+  width: 250px;
+  margin-top: 20px;
+  font-size: 17px;
+  color: rgb(247, 166, 17);
+  padding: 25px 0px;
+}
+.rightAbout {
+  flex: 2;
+}
+.aboutbtn {
+  padding: 10px 0px;
+  display: flex;
+  margin-top: 15px;
+}
+.aboutbtn button {
+  background-color: rgb(247, 166, 17);
+  border: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  color: white;
+  margin-right: 140px;
+  display: flex;
+}
+.aboutsvg img {
+  width: 400px;
+  height: 500;
+  display: flex;
+  padding: 25px;
+  margin-left: 155px;
+}
+@media screen and (max-width: 1050px) {
+  .aboutheading {
+    font-size: 100px;
+    width: 100px;
+    color: rgb(247, 166, 17);
+    line-height: 0.81;
+    margin-right: 150px;
+
+    padding: 0;
+  }
+  .aboutheading span {
+    font-size: 70px;
+  }
+
+  .aboutsvg img {
+    width: 400px;
+    height: 500;
+    display: flex;
+    padding: 25px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .aboutcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftAbout {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutsvg img {
+    width: 80%;
+    height: 500;
+    display: flex;
+    padding: 25px;
+    margin-left: 0px;
+  }
+}

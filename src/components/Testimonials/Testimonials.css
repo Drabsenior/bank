@@ -1,0 +1,112 @@
+.TestimonialWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(104, 103, 101);
+}
+.testimonialHeading span {
+  font-size: 25px;
+  color: gold;
+}
+.testimonialHeading {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.testimonialheading2 {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.testimonialheading2 span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 29px;
+}
+.testimonialheading2 span::after {
+  content: "";
+  background-color: gold;
+  display: flex;
+  height: 3px;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 15px;
+  width: 60px;
+}
+.Testimonialscontents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  z-index: 0;
+}
+.testimonialtext {
+  width: 250px;
+  text-align: center;
+  border: 3px solid white;
+  padding: 30px 15px;
+  padding-bottom: 55px;
+  margin-bottom: 20px;
+}
+.testimonialtext span {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.lowertestimonial img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute !important;
+  bottom: 31%;
+  left: 36%;
+}
+.testimonialtext span {
+  color: white;
+}
+.lowertestimonial {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.Testimonialname {
+  padding: 4px 5px;
+  font-size: 25px;
+  color: white;
+  margin-top: 12px;
+}
+.Testimonialoccupation {
+  font-size: 16px;
+  padding: 0px 5px;
+  margin-bottom: 15px;
+  color: gold;
+}
+.Tetsimonialcontainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 5px;
+  margin-right: 35px;
+}
+@media screen and (max-width: 500px) {
+  .testimonialheading2 span {
+    font-size: 22px;
+  }
+  .Tetsimonialcontainer {
+    padding: 10px 0px;
+    margin-right: 0;
+  }
+}

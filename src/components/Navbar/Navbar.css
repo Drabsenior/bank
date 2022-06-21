@@ -1,0 +1,122 @@
+.NavbarWrapper {
+  height: 70px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+/* .allnav {
+  position: fixed;
+  width: 100%;
+} */
+.NavbarWrapper span {
+  padding: 10px;
+  margin-left: 95px;
+  cursor: pointer;
+  font-size: 20px;
+  color: wheat;
+}
+.LinkNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 130px;
+}
+
+.LinkNavbar li {
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-family: "Encode Sans Expanded", sans-serif;
+  transition: all 250ms ease-in-out;
+}
+/* .LinkNavbar li:hover {
+  color: aliceblue;
+  transform: scaleX(2px);
+} */
+
+/* .LinkNavbar li:active {
+  border-bottom: 2px solid gold;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+} */
+.LinkNavbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Mobilescreen {
+  display: none;
+}
+.CloseMenu {
+  display: none;
+}
+.MobileMenu ul {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .LinkNavbar {
+    margin-right: 40px;
+  }
+  .NavbarWrapper span {
+    margin-left: 45px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .LinkNavbar {
+    display: none;
+  }
+  .Mobilescreen {
+    display: flex;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .CloseIcon {
+    display: none;
+  }
+  .OpenIcon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+  .MobileMenu {
+    background-color: rgb(139, 132, 132);
+    color: white;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .MobileMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .MobileMenu li {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    .NavbarWrapper span {
+      /* margin-left: 15px; */
+    }
+  }
+}
